@@ -1,0 +1,306 @@
+/*-----google font---------*/
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-color: rgb(228, 228, 228);
+  opacity: 0.9;
+}
+
+/*---------------nav bar---------------*/
+nav a {
+  margin: 0px 50px;
+  text-decoration: none !important;
+  font-size: 3rem;
+  font-family: "Caveat", cursive;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+nav a:hover {
+  color: rgb(0, 255, 157);
+  transition: 0.3s ease-in-out;
+}
+/*--------x-------nav bar---------x------*/
+
+/*-------Intro font size(Web developer)--------*/
+
+.welcoming-img {
+  max-width: 100%;
+}
+
+
+.carousel-caption {
+  transform: translateY(-100%);
+  font-family: "Special Elite", cursive;
+}
+
+#intro-title {
+  font-size: 4rem;
+}
+#intro-text {
+  font-size: 3rem;
+}
+/*---xx---Intro font size(Web developer)----xx----*/
+
+/*----------These are my project section css------------------*/
+.welcome {
+  font-family: "Galada", cursive;
+  margin: 20px auto;
+  width: 60%;
+  border-bottom: 2px solid black;
+}
+/*------xx----These are my project section css-----xx-------------*/
+
+/*--------card margin-----------*/
+.card {
+  margin-top: 1rem;
+}
+/*--------card margin-----------*/
+
+/*--------------Profile link footer-----------------*/
+.profile-link {
+  display: flex;
+  justify-content: flex-start;
+}
+h2 {
+  font-family: "Galada", cursive;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  border-bottom: 3px solid rgb(133, 133, 133);
+  letter-spacing: 3px;
+}
+h4 {
+  font-size:1.2rem;
+}
+
+footer {
+  text-align: center;
+}
+
+/*---------------profile link Logo------------------*/
+.logo {
+  font-size: 2rem;
+  text-shadow: 1px 1px 3px #000000;
+  transition: transform 0.5s;
+  outline: none;
+}
+
+.gh {
+  color: black;
+}
+.gh:hover {
+  color: black;
+}
+.fb {
+  color: rgb(50, 114, 231);
+}
+.fb:hover {
+  color:  rgb(50, 114, 231);
+}
+.cp {
+  color: rgb(154, 35, 223);
+}
+.cp:hover {
+  color: rgb(154, 35, 223);
+}
+
+.logo:hover {
+  transform: translate(-5px, 0px);
+}
+
+/*-----xx----------profile link Logo--------xx----------*/
+
+
+/*-----------------on scroll effect-----------------------*/
+.jumbotron {
+  transition: 1s ease-in-out;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.jumbotron.fade-up {
+  transition: 1s ease-in-out;
+  opacity: 0.9;
+  transform: translateY(0px);
+}
+
+/*-----------------on scroll effect-----------------------*/
+
+
+/*------------------------------media view---------------------------*/
+@media (max-width: 1240px) {
+  .carousel-caption {
+    transform: translateY(-100%);
+    font-family: "Special Elite", cursive;
+  }
+  #intro-title {
+    font-size: 3rem;
+  }
+  #intro-text {
+    font-size: 1.5rem;
+  }
+  .welcome {
+    font-family: "Galada", cursive;
+    font-size: 3rem;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  h2 {
+    font-family: "Galada", cursive;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 970px) {
+  .carousel-caption {
+    transform: translateY(-70%);
+    font-family: "Special Elite", cursive;
+  }
+
+  nav a {
+    font-size:2rem;
+  }
+
+  #intro-title {
+    font-size: 2.6rem;
+  }
+  #intro-text {
+    font-size: 1.5rem;
+  }
+  .welcome {
+    font-family: "Galada", cursive;
+    font-size: 2rem;
+    margin-top:-50px;
+  }
+  .logo {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-family: "Galada", cursive;
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-size: .9rem;
+  }
+
+  p{
+    font-size:.8rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .carousel-caption {
+    transform: translateY(-50%);
+    font-family: "Special Elite", cursive;
+  }
+  #intro-title {
+    font-size: 2.4rem;
+  }
+  #intro-text {
+    font-size: 1.2rem;
+  }
+  .welcome {
+    font-family: "Galada", cursive;
+    font-size: 2rem;
+  }
+  .logo {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-family: "Galada", cursive;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  nav a {
+    font-size: 1.7rem;
+    font-family: "Caveat", cursive;
+  }
+  h4 {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 570px) {
+  nav {
+    margin:-10px;
+  }
+
+  nav a {
+    font-size: 1.3rem;
+    font-family: "Caveat", cursive;
+    margin-right:15px;
+  }
+  .carousel-caption {
+    transform: translateY(-30%);
+    font-family: "Special Elite", cursive;
+  }
+  #intro-title {
+    font-size: 1.6rem;
+  }
+  #intro-text {
+    font-size: 1.2rem;
+  }
+  .welcome {
+    font-family: "Galada", cursive;
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+  }
+  h2{
+    font-size:1.2rem;
+  }
+
+  h4 {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 380px) {
+  nav a {
+    font-size: 1.2rem;
+    font-family: "Caveat", cursive;
+  }
+  .carousel-caption {
+    transform: translateY(-10%);
+    font-family: "Special Elite", cursive;
+  }
+  #intro-title {
+    font-size: 1rem;
+  }
+  #intro-text {
+    font-size: 0.9rem;
+  }
+  .welcome {
+    font-family: "Galada", cursive;
+    font-size: 1.3rem;
+    width: 80%;
+    margin-top:-70px;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+  h2 {
+    font-family: "Galada", cursive;
+    font-size: 1rem;
+    border-bottom:1px solid gray;
+  }
+  h4 {
+    font-size: .6rem;
+  }
+  footer{
+    font-size:.8rem;
+  }
+}
+/*------------------------------media view---------------------------*/
