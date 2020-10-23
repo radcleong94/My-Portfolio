@@ -13,29 +13,33 @@
 
   <!---------------nav bar------------------->
   
-<nav class="navbar navbar-expand-xs bg-dark justify-content-center sticky-top ">
-  <a href="#projects"><i class="fas fa-project-diagram fa-xs"></i> My Project</a>
+<nav>
+  <div class="navbar">
+    <ul>
+      <i class="far fa-compass"></i>
+      <li>
+        <a href="#projects"><i class="fas fa-project-diagram fa-xs"></i> My Project</a>
+      </li>
+      <li>
+        <a href="#profilelink" id="profile-link"><i class="far fa-address-card fa-xs"></i> Profile</i></a>
+      </li>
+    </ul>
+  </div>
 
-  <a href="#profilelink" id="profile-link"><i class="far fa-address-card fa-xs"></i> Profile</i></a>
 </nav>
 
 <!---------xx------nav bar--------xx----------->
 
 <!-----------------welcoming section---------------------------->
-  <div class="carousel">
-  <img class="img-fluid welcoming-img" src="./img/Welcomeimg.jpg" alt="">
-  <div class="carousel-caption">
+<div class="intro-container">
   <h1 id="intro-title">Web Developer</h1>
    <p id="intro-text">Radcleong</p>
-  </div>
   </div>
 <br>
 <br>
   <!---------xx--------welcoming section--------xx-------------------->
 
 <!--------------------Start projects here------------>
-<br>
-<br>
   <!------these are My project-->
 <div class="container-fluid padding" id="projects">
   <div class="row text-center gap">
@@ -50,49 +54,71 @@
 <!--------------------projects cards---------------------------->
 <div class="container padding">
   <div class="row padding">
-    <div class="col-md-6">
+    <div class="col-md-4">
       <div class="card">
         <img class="card-img-top" src="./img/card6.PNG">
         <div class="card-body">
             <h4 class="card-title">1. Coffee Shop WebPage.</h4>
             <p class="card-text">Build a UI coffe shop webpage which cafe i used to work as a Barista.</p>
-            <a href="https://radcleong94.github.io/Coffea-Coffee-WebPage/" target="_blank" class="btn btn-outline-primary btn-lg">Click here to visit.</a>
           </div>
+          <a href="https://radcleong94.github.io/Coffea-Coffee-WebPage/" target="_blank" class="btn btn-outline-primary btn-lg visit-btn">Click here to visit</a>
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-4">
         <div class="card">
           <img class="card-img-top" src="./img/card7.PNG">
           <div class="card-body">
               <h4 class="card-title">2. Burger Restaurant Menu Page.</h4>
               <p class="card-text">Build a UI restaurant menu and website host by github.</p>
-              <a href="https://radcleong94.github.io/burger-menu/" target="_blank" class="btn btn-outline-primary btn-lg">Click here to visit.</a>
             </div>
+            <a href="https://radcleong94.github.io/burger-menu/" target="_blank" class="btn btn-outline-primary btn-lg visit-btn">Click here to visit</a>
           </div>
         </div>
 
-        <div class="col-md-6 ">
+        <div class="col-md-4">
           <div class="card">
             <img class="card-img-top" src="./img/card3.PNG">
             <div class="card-body">
                 <h4 class="card-title">3.Techincal Documentation Page</h4>
                 <p class="card-text">Introduction Programming Languages JavaScript & Java from FreeCodeCamp project.</p>
-                <a href="https://codepen.io/radcleong94/pen/mdVXwYE" target="_blank" class="btn btn-outline-primary btn-lg">Click here to visit.</a>
               </div>
+              <a href="https://codepen.io/radcleong94/pen/mdVXwYE" target="_blank" class="btn btn-outline-primary btn-lg visit-btn">Click here to visit</a>
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div class="card">
               <img class="card-img-top" src="./img/card4.PNG">
               <div class="card-body">
                   <h4 class="card-title">4.Product Landing Page</h4>
                   <p class="card-text">Deliver coffee knowledge & houseblend product from FreeCodeCamp project.</p>
-                  <a href="https://codepen.io/radcleong94/pen/ExPQKKZ" target="_blank" class="btn btn-outline-primary btn-lg">Click here to visit.</a>
                 </div>
+                <a href="https://codepen.io/radcleong94/pen/ExPQKKZ" target="_blank" class="btn btn-outline-primary btn-lg visit-btn">Click here to visit</a>
               </div>
             </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <img class="card-img-top" src="./img/card8.PNG">
+                <div class="card-body">
+                    <h4 class="card-title">5. Random Quotes Machine</h4>
+                    <p class="card-text">Html Css JavaScript build a Random generate quotes machines.</p>
+                  </div>
+                  <a href="https://codepen.io/radcleong94/full/mdPJPag" target="_blank" class="btn btn-outline-primary btn-lg visit-btn">Click here to visit</a>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top" src="./img/card9.PNG">
+                  <div class="card-body">
+                      <h4 class="card-title">6. Author Login Page</h4>
+                      <p class="card-text">Build authenticate login page with Mongodb and Node.js.</p>
+                    </div>
+                    <a href="https://login-pages.herokuapp.com/login" target="_blank" class="btn btn-outline-primary btn-lg visit-btn">Click here to visit</a>
+                  </div>
+                </div>
     </div>
   </div>
 </div>
@@ -100,17 +126,76 @@
 <br>
   <!--------------xx------projects cards------xx------------->
   
+  <!-- -------------------react - project section------------------ -->
+  <div class="container-fluid padding" id="-react-projects">
+    <div class="row text-center">
+      <div class="col-12">
+        <h1 class="react-project-text"><i class="fab fa-react"></i> My React Projects</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container padding">
+    <div class="row padding">
+      <div class="col-md-6">
+        <div class="card">
+          <img class="card-img-top" src="./img/react-img1.PNG">
+          <div class="card-body">
+              <h4 class="card-title">1. React Menu</h4>
+              <p class="card-text">Build a Menu included function selection filter by React.js and host on netlify.app.</p>
+            </div>
+            <a href="https://radcleong94-react-menu.netlify.app/" target="_blank" class="btn btn-outline-primary btn-lg visit-btn">Click here to visit</a>
+          </div>
+        </div>
+  
+        <div class="col-md-6">
+          <div class="card">
+            <img class="card-img-top" src="./img/react-img2.PNG">
+            <div class="card-body">
+                <h4 class="card-title">2. Tour</h4>
+                <p class="card-text">Build a tours selection pages by React.js and host on netlify.app.</p>
+              </div>
+              <a href="https://radcleong94-react-tour.netlify.app/" target="_blank" class="btn btn-outline-primary btn-lg visit-btn">Click here to visit</a>
+            </div>
+          </div>
+  
+          <div class="col-md-6">
+            <div class="card">
+              <img class="card-img-top" src="./img/react-img3.PNG">
+              <div class="card-body">
+                  <h4 class="card-title">3. Nav Side Bar & Modal</h4>
+                  <p class="card-text">Build a toggle side open nav bar and modal by React.js and host on netlify.app.</p>
+                </div>
+                <a href="https://radcleong94-react-nav-slidebar.netlify.app/" target="_blank" class="btn btn-outline-primary btn-lg visit-btn">Click here to visit</a>
+              </div>
+            </div>
+  
+            <div class="col-md-6">
+              <div class="card">
+                <img class="card-img-top" src="./img/react-img4.PNG">
+                <div class="card-body">
+                    <h4 class="card-title">4. Birthday Reminder</h4>
+                    <p class="card-text">Build a functional birthday reminder by React.js and host on netlify.app.</p>
+                </div>
+                  <a href="https://radcleong94-react-birthday-reminder.netlify.app/" target="_blank" class="btn btn-outline-primary btn-lg visit-btn">Click here to visit</a>
+                </div>
+              </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
    <!------------------------Footer logo section------------------>
   
   <div class="jumbotron">
     <div class="container ">
       <div class="profile-link" id="profilelink">
         <h2>My Social Media:</h2>  
-        <br>
       </div>
       <div class="row">
           <div class="col-7"><br>
-            <h4>- Feel free to checkout my personal facebook profile by click the Facebook logo.</h4>
+            <p class="profile-p">- Feel free to checkout my personal facebook profile by click the Facebook logo.</p>
         </div>
         <div class="col-5">
           <a href="https://www.facebook.com/RadcLeong" target="_blank" class="logo btn fb"><i class="fab fa-facebook-square fb"> Facebook</i></a>
@@ -118,15 +203,13 @@
         </div>
       </div>
       <br />
-      <br />
       <div class="container">
         <div class="profile-link">
           <h2>My Github Profile:</h2>  
-          <br>
         </div>
         <div class="row">
           <div class="col-7"><br>
-            <h4>- Check out my others Projects and Repositories in Github.</h4>
+            <p class="profile-p">- Check out my others Projects and Repositories in Github.</p>
             </div>
           <div class="col-5">
           <a href="https://github.com/radcleong94" target="_blank" class="logo btn gh"><i class="fab fa-github gh"></i> Github</a>
@@ -134,15 +217,13 @@
         </div>
       </div>
       <br />
-      <br />
       <div class="container">
         <div class="profile-link">
           <h2>My Codepen Profile:</h2>  
-          <br>
         </div>
         <div class="row">
           <div class="col-7"><br>
-            <h4>- Check out my Codepen.io additional Projects from freecodecamp.org.</h4>
+            <p class="profile-p">- Check out my Codepen.io additional Projects from freecodecamp.org.</p>
             </div>
           <div class="col-5">
             <a href="https://codepen.io/radcleong94" target="_blank" class="logo btn cp"><i class="fab fa-codepen cp"></i> Codepen</a>
