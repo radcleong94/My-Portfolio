@@ -135,6 +135,12 @@ p{
   max-width:25rem;
   letter-spacing: 2px;
 }
+
+.shopping-cart-card{
+  max-width:40rem;
+  margin:0 auto;
+  margin-bottom: 3rem;
+}
 /* ---------react xxxxxxx------------------ */
 
 /*--------------Profile link footer-----------------*/
@@ -211,7 +217,7 @@ footer {
   transition: 1s ease-in-out;
   background:rgb(238, 249, 252);
   transform: translateY(50px);
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 .jumbotron.fade-up {
@@ -222,6 +228,13 @@ footer {
 
 /*-----------------on scroll effect-----------------------*/
 
+footer{
+  background:rgb(32, 32, 32);
+  padding:1.6rem;
+  color:white;
+  letter-spacing: 1px;
+  font-size: .75rem;
+}
 
 /*------------------------------media view---------------------------*/
 @media (min-width: 676px) {
@@ -303,6 +316,9 @@ footer {
   }
   .profile-p{
     font-size: .9rem;
+  }
+  footer{
+    font-size: .85rem;
   }
 }
 
