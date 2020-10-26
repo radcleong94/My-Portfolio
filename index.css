@@ -10,80 +10,163 @@
 }
 body {
   background-color: rgb(238, 249, 252);
-  opacity: 0.9;
 }
+/* html{
+  scroll-behavior: smooth;
+} */
 
 /*---------------nav bar---------------*/
-nav{
-  text-align: center;
-  background:rgba(196, 247, 255, 0.582);
-  height:4rem;
+nav .navbar-toggler{
+  outline:none;
+  color:white;
 }
+.navbar-brand{
+  color:white;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  transition: all .2s ease-in-out;
+}
+.navbar-brand span{
+  font-style: italic;
+  color:rgb(72, 90, 255);
 
-ul i {
-  font-size:2rem;
-  color:rgb(61, 61, 61);
-  margin-right:10px;
+}
+.navbar-brand:hover{
+  color:rgb(255, 67, 67);
+}
+nav{
+  /* text-align: center; */
+  background:rgb(54, 54, 54) !important;
+
 }
 
 ul li{
   list-style-type: none;
-  display:inline;
 }
 
-ul li a {
+ ul li a {
   text-decoration: none !important;
-  font-size: 1.4rem;
-  color:black;
-  padding:1.2rem .6rem;
+  font-size: 1.2rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  color:rgb(255, 255, 255);
   letter-spacing: 2px;
-}
+} 
 
 ul li a:hover {
-  color: rgb(255, 177, 88);
+  color: rgb(255, 255, 255);
   transition: 0.2s ease-in-out;
-}
+  background-color: rgb(75, 75, 75);
+} 
 /*--------x-------nav bar---------x------*/
 
 /*-------Intro font size(Web developer)--------*/
-
 .intro-container{
-  background:rgb(236, 175, 255);
-  height: 400px;
-  display:grid;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 1px 1px 5px rgb(102, 102, 102);
+  background-image: url("/img/intro-img2.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.intro-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background-color:rgb(49, 49, 49);
+  opacity: 0.6;
+  z-index: -1;
 }
 
-#intro-title {
-  font-size: 3.2rem;
-  color:black;
-  margin-top:50px;
-  letter-spacing: 5px;
+.intro-text h1 {
+  display: block;
+  width: fit-content;
+  letter-spacing: 4px;
+  font-size: 2.2rem;
   text-align: center;
+  position: relative;
+  top:17rem;
+  margin-bottom: 10px;
+  padding: 0 40px;
+  color: transparent;
+  animation: text_reveal 0.5s ease forwards;
+  animation-delay: 1s;
 }
-#intro-text {
-  text-align: center;
-  color:rgb(36, 36, 36);
-  margin-top:-100px;
-  letter-spacing: 2px;
-  font-size: 1.8rem;
-} 
+
+.intro-text h1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: rgba(224, 224, 224, 0.459);
+  animation: text_reveal_box 1s ease;
+  animation-delay: 0.5s;
+  border-radius: 30px;
+}
+
+.intro-text h1:nth-child(1) {
+  animation-delay: 1s;
+}
+.intro-text h1:nth-child(2) {
+  animation-delay: 2s;
+}
+.intro-text h1:nth-child(3) {
+  animation: text_reveal_name 0.5s ease forwards;
+  animation-delay: 3s;
+}
+
+.intro-text h1:nth-child(1) span {
+  animation-delay: 0.5s;
+}
+.intro-text h1:nth-child(2) span {
+  animation-delay: 1.5s;
+}
+.intro-text h1:nth-child(3) span {
+  animation-delay: 2.5s;
+}
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes text_reveal {
+  100% {
+    color: #ffffff;
+  }
+}
+@keyframes text_reveal_name {
+  100% {
+    color: #0bb6ff;
+  }
+}
 /*---xx---Intro font size(Web developer)----xx----*/
 
 /*----------These are my project section css------------------*/
 .welcome {
-  font-family: "Galada", cursive;
   margin:0 auto;
   margin-top:2rem;
-  margin-bottom:1rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
   font-weight: bold;
   letter-spacing: 2px;
   color:rgb(58, 58, 58);
-  width: 75%;
-  border-bottom: 2px solid rgb(153, 153, 153);
+}
+.underline{
+  height:3px;
+  width:18rem;
+  margin:0 auto;
+  background-color: rgba(255, 172, 77, 0.815);
+  margin-bottom: 2rem;
 }
 /*------xx----These are my project section css-----xx-------------*/
 
@@ -142,6 +225,34 @@ p{
   margin-bottom: 3rem;
 }
 /* ---------react xxxxxxx------------------ */
+
+/* ----------backend project----------------- */
+.back-end-img{
+  border:2px solid rgb(255, 108, 255);
+}
+.underline-2{
+  height:2px;
+  width:16rem;
+  margin:0 auto;
+  background-color: rgba(105, 105, 105, 0.815);
+  margin-bottom: 2rem;
+}
+
+.backend-text{
+  text-align:center;
+  margin-top: 1.4rem;
+  letter-spacing: 2px;
+  color:rgb(0, 0, 0);
+}
+.backend-text-p{
+  font-size: .9rem;
+  margin-top:-1rem;
+  margin-bottom: 3rem;
+}
+
+#backend-project-container{
+  margin-bottom: 6rem;
+}
 
 /*--------------Profile link footer-----------------*/
 .profile-link {
@@ -319,6 +430,11 @@ footer{
   }
   footer{
     font-size: .85rem;
+  }
+
+  .intro-text h1{
+    margin-left: 10rem;
+    font-size: 2.6rem;
   }
 }
 
