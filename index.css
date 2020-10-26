@@ -11,9 +11,9 @@
 body {
   background-color: rgb(238, 249, 252);
 }
-/* html{
+html{
   scroll-behavior: smooth;
-} */
+}
 
 /*---------------nav bar---------------*/
 nav .navbar-toggler{
@@ -62,7 +62,7 @@ ul li a:hover {
 
 /*-------Intro font size(Web developer)--------*/
 .intro-container{
-  background-image: url("/img/intro-img2.jpg");
+  background-image: url("./img/intro-img2.jpg");
   background-size: cover;
   background-position: center center;
   min-height: 100vh;
