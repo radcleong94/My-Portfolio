@@ -1,3 +1,5 @@
+
+// magic scroll effect //
 var controller = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene({
@@ -5,3 +7,13 @@ var scene = new ScrollMagic.Scene({
 })
   .setClassToggle(".jumbotron", "fade-up")
   .addTo(controller);
+
+
+  // add class //
+  $(document).ready(function(){
+
+    $("#drop-icon").click(function(){
+      $("#drop-icon").toggleClass("active");
+    });
+
+  });

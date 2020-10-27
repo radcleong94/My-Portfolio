@@ -3,6 +3,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 
+:root {
+    --buttonLinkPink:rgb(255, 108, 255);
+    --background:rgb(238, 249, 252);
+    --imgBorderColor: rgb(255, 206, 255);
+    --boxShadow:1px 1px 10px rgb(165, 160, 160);
+    --underlineColor:rgba(255, 172, 77, 0.815);
+    --paragraphColor:rgba(100, 100, 100, 0.849);
+    --navbarColor:rgb(54, 54, 54);
+}
+
+
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -19,7 +30,14 @@ html{
 nav .navbar-toggler{
   outline:none;
   color:white;
+  transition: all .4s ease-in-out;
 }
+/* add class jquery */
+.active{
+  transform: rotate(180deg);
+}
+
+
 .navbar-brand{
   color:white;
   font-size: 1.6rem;
@@ -36,7 +54,7 @@ nav .navbar-toggler{
 }
 nav{
   /* text-align: center; */
-  background:rgb(54, 54, 54) !important;
+  background:var(--navbarColor);
 
 }
 
@@ -165,7 +183,7 @@ ul li a:hover {
   height:3px;
   width:18rem;
   margin:0 auto;
-  background-color: rgba(255, 172, 77, 0.815);
+  background-color: var(--underlineColor);
   margin-bottom: 2rem;
 }
 /*------xx----These are my project section css-----xx-------------*/
@@ -174,7 +192,7 @@ ul li a:hover {
 .card {
   margin-top: 1rem;
   border:3px solid rgb(255, 206, 255);
-  box-shadow: 1px 1px 15px rgb(190, 190, 190);
+  box-shadow: var(--boxShadow);
   object-fit: cover;
 }
 
@@ -183,8 +201,8 @@ h4 {
   letter-spacing: 2px;
 }
 p{
-  color:rgb(66, 66, 66);
-  font-size: .9rem;
+  color:var(--paragraphColor);
+  font-size: .85rem;
 }
 .visit-btn{
   font-size: 1rem;
@@ -228,7 +246,8 @@ p{
 
 /* ----------backend project----------------- */
 .back-end-img{
-  border:2px solid rgb(255, 108, 255);
+  border:2px solid var(--imgBorderColor);
+  box-shadow: var(--boxShadow);
 }
 .underline-2{
   height:2px;
@@ -340,7 +359,7 @@ footer {
 /*-----------------on scroll effect-----------------------*/
 
 footer{
-  background:rgb(32, 32, 32);
+  background:var(--navbarColor);
   padding:1.6rem;
   color:white;
   letter-spacing: 1px;
@@ -359,7 +378,7 @@ footer{
   }
   p{
     font-size:.7rem;
-    color:rgb(66, 66, 66);
+    color:var(--paragraphColor);
   }
   .logo{
     font-size: 1.4rem;
