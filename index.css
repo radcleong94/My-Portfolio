@@ -42,7 +42,7 @@ nav .navbar-toggler{
   color:white;
   font-size: 1.6rem;
   letter-spacing: 1px;
-  transition: all .2s ease-in-out;
+ 
 }
 .navbar-brand span{
   font-style: italic;
@@ -50,6 +50,7 @@ nav .navbar-toggler{
 
 }
 .navbar-brand:hover{
+  transition: all .4s ease-in-out;
   color:rgb(255, 67, 67);
 }
 nav{
@@ -458,3 +459,26 @@ footer{
 }
 
 /*------------------------------media view---------------------------*/
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 15px grey; 
+  border-radius: 8px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(88, 88, 88); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d6d6d6; 
+}
