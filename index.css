@@ -482,3 +482,15 @@ footer{
 ::-webkit-scrollbar-thumb:hover {
   background: #d6d6d6; 
 }
+
+/* night mode button */
+.setBtn{
+  cursor: pointer;
+  padding:2px 5px 2px 5px;
+  border:none;
+  outline:none !important;
+  border-radius:5px;
+  text-transform: uppercase;
+  background:rgb(53, 53, 53);
+  color:white;
+}
